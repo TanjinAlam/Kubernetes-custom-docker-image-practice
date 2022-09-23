@@ -10,11 +10,11 @@ Nginx that will be called from the NodeJs service(ClusterIP)
     alias k="kubectl"
 
 
-## Create Kubernetes deployment & service (Seperate)
+# Create Kubernetes deployment & service (Seperate)
     k apply -f service.yaml 
     k apply -f deployment.yaml 
 
-## Create Kubernetes deployment & service (Combine)
+# Create Kubernetes deployment & service (Combine)
     k apply -f k8s-web-to-nginx.yaml -f nginx.yaml
 
 
